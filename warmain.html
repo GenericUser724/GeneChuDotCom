@@ -1,0 +1,157 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>genechu.com</title>
+		<csscriptdict>
+			<script><!--CSInit = new Array;function CSScriptInit() {if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'layoutimages/topleft.gif',/*URL*/'layoutimages/topleftov.gif',/*URL*/'','Back to the Gallery Directory');
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="#ffffff" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onload="CSScriptInit();">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+			<tr height="13%">
+				<td bgcolor="#c8c8c8" width="100%" height="12%"></td>
+			</tr>
+			<tr height="580">
+			<td valign="top" align="left" bgcolor="#afafaf">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" height="580">
+					<tr height="80">
+						<td bgcolor="#c8c8c8" width="155" height="80"><csobj w="155" h="80" t="Button" ht="layoutimages/topleftov.gif" st="Back to the Gallery Directory"><a href="main.html" onmouseover="return CSIShow(/*CMP*/'button',1)" onmouseout="return CSIShow(/*CMP*/'button',0)" onclick="return CSButtonReturn()"><img src="layoutimages/topleft.gif" width="155" height="80" name="button" border="0" alt="Back to the Gallery Directory"></a></csobj></td>
+						<td bgcolor="#c8c8c8" height="80" width="10"><img src="layoutimages/topwallline.gif" width="10" height="80" border="0"></td>
+						<td bgcolor="#c8c8c8" background="layoutimages/topbg.gif" height="80" width="100%"></td>
+						<td bgcolor="#c8c8c8" background="layoutimages/topbg2.gif" height="80" width="10"></td>
+					</tr>
+					<tr height="380">
+						<td width="155" height="380" bgcolor="white" valign="top" align="center">
+							<script language=javascript>var menu='war';</script>
+							<script language=javascript>var submenu='none';</script>
+							<script language=javascript src='navmenu.js'></script>
+							</td>
+						<td width="10" height="380"><img src="layoutimages/verticalwallline.gif" width="10" height="380" border="0"></td>
+						<td height="380" bgcolor="white" width="100%">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+									<tr>
+										<td valign="middle" align="center" width="33%"><a href="wdesolation.html"><img src="galleryimages/wdesolationthm.gif" width="182" height="114" border="0"></a></td>
+										<td valign="middle" align="center" width="33%"><a href="wcaptivity.html"><img src="galleryimages/wcaptivitythm.gif" width="142" height="240" border="0"></a></td>
+										<td valign="middle" align="center" width="33%"><a href="wcageofeternity.html"><img src="galleryimages/wcageofeternitythm.gif" width="98" height="166" border="0"></a></td>
+									</tr>
+									<tr height="100">
+										<td valign="middle" align="center"  height="100">
+											<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="1">Desolation</font></p>
+										</td>
+										<td valign="middle" align="center" height="100">
+											<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="1">Captivity</font></p>
+										</td>
+										<td valign="middle" align="center" height="100">
+											<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="1">Cage of Eternity</font></p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						<td height="380" width="10" bgcolor="white"></td>
+					</tr>
+					<tr height="120">
+						<td bgcolor="#afafaf" width="155" height="120"><img src="layoutimages/bottomleft.gif" width="155" height="120" border="0"></td>
+						<td bgcolor="#afafaf" height="120" width="10"><img src="layoutimages/bottomwalline.gif" width="10" height="120" border="0"></td>
+						<td bgcolor="#afafaf" background="layoutimages/bottombg.gif" height="120" width="100%">
+							<script language=javascript>var webpagename='warmain';</script>
+							<script language=javascript src="bottomnav.js"></script></td>
+						<td bgcolor="#afafaf" background="layoutimages/bottombg2.gif" height="120" width="10"></td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+			<tr height="13%">
+				<td bgcolor="#afafaf" width="100%" height="13%"></td>
+			</tr>
+		</table>
+	</body>
+</html>
